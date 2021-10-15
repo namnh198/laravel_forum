@@ -79,7 +79,7 @@
         </main> 
     </div> 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script> 
-    <script src="{{ asset('js/jquery.textarea.js')}}"></script>
+    <script src="{{ asset('js/jquery.textarea.js', $secure)}}"></script>
     <script> 
         @if(Session::has('message')) 
         var type="{{Session::get('alert-type','info')}}" 
