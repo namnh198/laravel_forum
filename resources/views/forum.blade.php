@@ -20,7 +20,7 @@
                     <div class="card shadow-lg">
                     <div class="card-header bg-secondary text-white d-flex">
                         <div class="">
-                        Posted By : <img src="$thread->user->profile->avatar" width="50px" height="50px" alt="">
+                        Posted By : <img src="{{ $thread->user->profile->avatar }}" width="50px" height="50px" alt="">
                         {{ $thread->user->name }} ( {{ $thread->user->points }} <i class="fas fa-dollar-sign"></i> )</div>
                         <div class="ml-auto">
                             <a href="{{ route('show_thread_id',$thread->slug) }}" class="badge badge-warning">view</a>
